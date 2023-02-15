@@ -274,8 +274,8 @@ function IA() {
       let cloneO = o.cloneNode(true);
    contador = 0;
    preechido = 0;
-      for(let i =0; i < boxes.length; i++){
-         let randomNumero = Math.random(Math.random() * 5);
+      for(let i = 0; i < boxes.length; i++){
+         let randomNumero = Math.random(Math.random() * 2);
          if (boxes[i].childNodes[0] == undefined) {
             if (randomNumero <= 1) {
                boxes[i].appendChild(cloneO);
