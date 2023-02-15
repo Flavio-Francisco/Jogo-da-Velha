@@ -110,13 +110,26 @@ margin-right: 3px;
 
 #message p {
     position: absolute;
-    margin-left: 30%;
+    margin-left: 10%;
     margin-right: auto;
     top: 150px;
-    width: 500px;
+    width: 400px;
     font-size: 50px;
     background-color: black;
     color: white;
     padding: 20px;
+    
+}
+
+@media(max-width: 600px) {
+    #message p {
+        margin: auto;
+        width: 170px;
+        font-size: 50px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        
+    }
     
 }
