@@ -245,7 +245,7 @@ if (vencedor == "x") {
 // exibir messagem na tela
 
 messageText.innerHTML = msg;
-messagemConteiner.classList.remove("hide");
+   messagemConteiner.classList.remove("hide");
 
 //esconde messagem
 setTimeout(function () {
@@ -271,11 +271,11 @@ function IA() {
    
    // só vai preencher se estiver vazio o filho
    
-      let cloneO = o.cloneNode(true);
+   let cloneO = o.cloneNode(true);
    contador = 0;
    preechido = 0;
       for(let i = 0; i < boxes.length; i++){
-         let randomNumero = Math.random(Math.random() * 2);
+         let randomNumero = Math.floor(Math.random() * 5);
          if (boxes[i].childNodes[0] == undefined) {
             if (randomNumero <= 1) {
                boxes[i].appendChild(cloneO);
@@ -293,5 +293,4 @@ function IA() {
          IA();
          
       }
-
 }
