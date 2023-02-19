@@ -248,9 +248,9 @@ messageText.innerHTML = msg;
    messagemConteiner.classList.remove("hide");
 
 //esconde messagem
-//setTimeout(function () {
-  // messagemConteiner.classList.add('hide')
-//},3000);
+setTimeout(function () {
+   messagemConteiner.classList.add('hide')
+},3000);
 
 //zerar jogadas
 player1 = 0;
